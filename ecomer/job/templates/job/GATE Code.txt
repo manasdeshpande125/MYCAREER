@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GATE</title>
+    <style>
+        html{
+        background-image: linear-gradient(-45deg, #f08a95, #aaebd5);
+        }
+        *{
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+        body{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-left: 60px;
+            margin-right: 60px;
+            background-image: linear-gradient(45deg, #aaebd5, #f08a95);
+            border: 5px solid;
+            border-radius: 40px;
+            box-sizing: border-box;
+            border-color: #0f55aa;
+            box-shadow: 5px 5px 5px 5px #cf75cf;
+        }
+        h1{
+            font-size: 4rem;
+            font-family: 'Times New Roman', Times, serif;
+            color: #006b3d;
+            text-align: center;
+        }
+        h2{
+            color: #023e8a;
+            font-size: 3rem;
+            font-family: 'Otomanopee One', sans-serif;
+        }
+        h3{
+            font-size: 2rem;
+            color: red;
+        }
+        h4{
+            font-size: 1.8rem;
+            font-weight: bolder;
+        }
+        p{
+            font-family: 'Roboto', sans-serif;
+            font-size: larger;
+        }
+        li{
+            font-size: large;
+            font-family: 'Roboto', sans-serif;
+        }
+        #note{
+            font-weight: bold;
+        }
+        table, th, td{
+            border: 2px solid black;
+            border-collapse: collapse;
+            font-size: 1.1rem;
+            padding: 10px;
+            empty-cells: hide;
+            text-align: center;
+        }
+        #expat{
+            width: 80%;
+            margin: auto;
+            margin-bottom: 10px;
+            table-layout: fixed;
+            border: 3px solid;
+        }
+        #epdesc{
+            font-weight: bold;
+            width: 35%;
+        }
+        #brcsit{
+            width: 90%;
+            margin: auto;
+            margin-bottom: 10px;
+            table-layout: fixed;
+            border: 3px solid;
+        }
+        #brece{
+            width: 90%;
+            margin: auto;
+            margin-bottom: 10px;
+            table-layout: fixed;
+            border: 3px solid;
+        }
+        #last{
+            text-align: right;
+            font-size: larger;
+            margin-bottom: 15px;
+        }
+        a:hover{
+            text-decoration: none;
+            color: red;
+        }
+        a:visited{
+            color: indigo;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="top">GATE: Graduate Aptitude Test in Engineering</h1>
+    <div>
+        <h2>About GATE</h2>
+            <p>
+                Graduate Aptitude Test in Engineering or GATE is an online national level examination conducted for Master of Engineering (ME), 
+                Masters in Technology (MTech) and direct PhD admissions to Indian Institutes of Technology (IITs), National Institutes of 
+                Technology (NITs), Indian Institutes of Information Technology (IIITs) and other institutes/universities across India. 
+                The exam is jointly conducted by IIT Bombay, IIT Delhi, IIT Guwahati, IIT Kanpur, IIT Kharagpur, IIT Madras, IIT Roorkee and 
+                Indian Institute for Science, Bangalore (IISC Bangalore), on a rotational basis on behalf of the National Coordination Board 
+                (NCB - GATE), Department of Higher Education, Ministry of Human Resource & Development (MHRD), Government of India.
+            </p>
+            <p>
+                The GATE score of a candidate reflects the relative performance level of a candidate. The score is used for admissions to 
+                various post-graduate education programs (e.g. Master of Engineering, Master of Technology, Master of Architecture, Doctor of 
+                Philosophy) in Indian higher education institutes, with financial assistance provided by MHRD and other government agencies. 
+                Recently, GATE scores are also being used by several Indian public sector undertakings for recruiting graduate engineers in 
+                entry-level positions. It is one of the most competitive examinations in India. GATE is also recognized by various institutes 
+                outside India, such as Nanyang Technological University in Singapore.
+            </p>
+    </div>
+    <div>
+        <ul class="navbar">
+            <li><a href=#eligibility>Eligibility</a></li>
+            <li><a href=#exampattern>Exam Pattern</a></li>
+            <li><a href=#syllabus>Syllabus</a></li>
+            <li><a href=#booksandresources>Books and Resources</a></li>
+            <li><a href=#preparationtips>Preparation Tips</a></li>
+        </ul>
+    </div>
+    <div>
+        <h2 id="eligibility">Eligibility</h2>
+            <p>The following students are eligible to take GATE:</p>
+            <ul>
+                <li>Bachelor's degree holders in Engineering / Technology / Architecture (3 years after 10+2/ 10+2+3(ongoing)/ 
+                    10+2+4(ongoing)/ Post-B.Sc./ Post-Diploma) and those who are in the final year of such programs (Also prefinal 
+                    year of B.E./B.Tech).</li>
+                <li>Master's degree holders in any branch of Science/Mathematics/Statistics/Computer Applications or equivalent 
+                    and those who are in the final year of such programs.</li>
+                <li>Candidates in the second or higher year of Four-year integrated master's degree programs (Post-B.Sc.) 
+                    in Engineering / Technology.</li>
+                <li>Candidates in the fourth or higher year of Five-year integrated master's degree programs or Dual Degree programs 
+                    in Engineering / Technology.</li>
+                <li>Candidates with qualifications obtained through examinations conducted by professional societies recognized by 
+                    UGC/AICTE (e.g. AMIE by IE(India), AMICE by the Institute of Civil Engineers (India)-ICE(I), AMIETE By IETE(India)) 
+                    as equivalent to B.E./B.Tech.</li>
+            </ul>
+            <p id="note">Note: There is no age limit criterion defined by the exam conducting authority to appear in GATE.</p>
+    </div>
+    <div>
+        <h2 id="exampattern">Exam Pattern</h2>
+        <table id="expat">
+            <tr>
+                <td id="epdesc">Exam Duration</td>
+                <td>3 hours (180 minutes)</td>
+            </tr>
+            <tr>
+                <td id="epdesc">Total Papers</td>
+                <td>27</td>
+            </tr>
+            <tr>
+                <td id="epdesc">Total Questions</td>
+                <td>65 Questions (General Aptitude: 10 Questions; Engineering Maths + Core Subjects: 55 Questions)</td>
+            </tr>
+            <tr>
+                <td id="epdesc">Total Marks</td>
+                <td>100 Marks</td>
+            </tr>
+            <tr>
+                <td id="epdesc">Type of Questions Asked</td>
+                <td>Multiple Choice Questions (MCQ); Multiple Select Questions (MSQ), and Numerical Answer Type (NAT)</td>
+            </tr>
+            <tr>
+                <td id="epdesc">Number of sections</td>
+                <td>Two or Three (varies for different papers)</td>
+            </tr>
+            <tr>
+                <td id="epdesc">Marking Scheme</td>
+                <td>1 marks and 2 marks</td>
+            </tr>
+            <tr>
+                <td id="epdesc">Negative Marking</td>
+                <td>MCQs: for 1 marks MCQ, -⅓ mark for each wrong answer and for 2 marks MCQs, -⅔ mark for each wrong answer; 
+                    MCQs and NATs: No negative marking</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h2 id="syllabus">Syllabus</h2>
+        <p>GATE is believed to be one amongst the toughest entrance exams in India. The syllabus for the examination is very exhaustive 
+            and covers from 10 to 14 subjects from the engineering stream. Hence, it is important for students to analyse the GATE 
+            syllabus meticulously before kick-starting the preparation. Aspirants can check our GATE syllabus page that covers all the 
+            25 papers including General Aptitude (common paper).
+        </p>
+        <h3>Syllabus for Computer Science and Information Technology Engineering</h3>
+        <ol>
+            <li>Engineering Mathematics</li>
+            <li>Digital Logic</li>
+            <li>Computer Organization and Architecture</li>
+            <li>Programming and Data Structures</li>
+            <li>Algorithms</li>
+            <li>Theory of Computation</li>
+            <li>Compiler Design</li>
+            <li>Operating System</li>
+            <li>Databases</li>
+            <li>Computer Networks</li>
+        </ol>
+        <h3>Syllabus for Electronics and Communication Engineering</h3>
+        <ol>
+            <li>Engineering Mathematics</li>
+            <li>Networks, Signals and Systems</li>
+            <li>Electronic Devices</li>
+            <li>Analog Circuits</li>
+            <li>Digital Circuits</li>
+            <li>Control Systems</li>
+            <li>Communications</li>
+            <li>Electromagnetics</li>
+        </ol>
+        <h4>For Detailed Syllabus:</h4>
+        <ul>
+            <li><a href="S:\PBL\My Work\GATE\CS & IT Syllabus.pdf">CS & IT Syllabus</a></li>
+            <li><a href="S:\PBL\My Work\GATE\EC Syllabus.pdf">ECE Syllabus</a></li>
+        </ul>
+    </div>
+    <div>
+    <h2 id="booksandresources">Books and Resources</h2>
+    <h3>Reference Books for CS & IT</h3>
+    <table id="brcsit">
+        <tr>
+            <th>Topic</th>
+            <th>Book Name</th>
+            <th>Authors</th>
+        </tr>
+        <tr>
+            <td>Algorithms</td>
+            <td>Introduction to Algorithms</td>
+            <td>Cormen</td>
+        </tr>
+        <tr>
+            <td>Operating System</td>
+            <td>Operating System Concepts</td>
+            <td>Galvin</td>
+        </tr>
+        <tr>
+            <td>Theory of Computation</td>
+            <td>Automata, Theory, Languages and Computation</td>
+            <td>Ullman</td>
+        </tr>
+        <tr>
+            <td>Computer Networks</td>
+            <td>Computer Networks</td>
+            <td>Tanenbaum</td>
+        </tr>
+        <tr>
+            <td>Computer Organisation</td>
+            <td>Computer Organisation</td>
+            <td>Carl Hamacher</td>
+        </tr>
+        <tr>
+            <td>Database Management System</td>
+            <td>Database System Concepts</td>
+            <td>Korth</td>
+        </tr>
+        <tr>
+            <td>Compiler Design</td>
+            <td>Compilers: Principles, Techniques and Tool</td>
+            <td>Aho & Ull Man</td>
+        </tr>
+        <tr>
+            <td>Digital Logic</td>
+            <td>Digital Logic And Computer Design</td>
+            <td>Morris Mano</td>
+        </tr>
+        <tr>
+            <td>Software Engineering</td>
+            <td>Software Engineering: A Practitioner’s Approach</td>
+            <td>Pressman</td>
+        </tr>
+        <tr>
+            <td>Discrete Mathematics</td>
+            <td>Discrete Mathematics and its Applications</td>
+            <td>Kenneth H Rosen</td>
+        </tr>
+    </table>
+    <h3>Reference Books for ECE</h3>
+    <table id="brece">
+        <tr>
+            <th>Topic</th>
+            <th>Book Name</th>
+            <th>Author</th>
+        </tr>
+        <tr>
+            <td>Analog Circuits</td>
+            <td>Microelectronic Circuits: Theory and Applications (Edition 6)</td>
+            <td>Adel S. Sedra, Kenneth C. Smith</td>
+        </tr>
+        <tr>
+            <td>Networks</td>
+            <td>Fundamentals of Electric Circuits (Edition 5)</td>
+            <td>Charles K. Alexander, Matthew N. O. Sadiku</td>
+        </tr>
+        <tr>
+            <td>Control Systems</td>
+            <td>Automatic Control Systems (Edition 9)</td>
+            <td>Benjamin C. Kuo</td>
+        </tr>
+        <tr>
+            <td>Signals & Systems</td>
+            <td>Signals & Systems (Edition 2)</td>
+            <td>Alan V. Oppenheim, Alan S.Willsky, S.Hamid Nawab</td>
+        </tr>
+        <tr>
+            <td>Digital Circuits</td>
+            <td>Digital Logic and Computer Design (Edition 1)</td>
+            <td>M. Morris Mano</td>
+        </tr>
+        <tr>
+            <td>Electromagnetics</td>
+            <td>Principles of Electromagnetics (Edition 4)</td>
+            <td>Mathew N.O. Sadiku</td>
+        </tr>
+        <tr>
+            <td>Electronic Devices and Circuits</td>
+            <td>Semiconductor Physics and Devices (Edition 4)</td>
+            <td>Donald A. Neaman, Dhrubes Biswas</td>
+        </tr>
+        <tr>
+            <td>Analog and Digital Communication</td>
+            <td>Principles of Communication Systems (Edition 3)</td>
+            <td>Goutam Saha, Herbert Taub, Donald Schilling</td>
+        </tr>
+        <tr>
+            <td>Engineering Mathematics</td>
+            <td>Higher Engineering Mathematics (Edition 43)</td>
+            <td>B. S. Grewal</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Quantitative Aptitude</td>
+            <td>A Modern Approach to Verbal & Non-Verbal Reasoning (Edition: Revised)</td>
+            <td>R.S. Aggarwal</td>
+        </tr>
+        <tr>
+            <td>Quantitative Aptitude For Competitive Examinations (Edition 7)</td>
+            <td>R.S. Aggarwal</td>
+        </tr>
+    </table>
+    <h3>Online Resources for GATE Preparation:</h3>
+    <ul>
+        <li><a href="https://gradeup.co/">GradeUp</a></li>
+        <li><a href="https://unacademy.com/goal/gate-ese/PESHE">Unacademy</a></li>
+        <li><a href="https://gateoverflow.in/">GATE Overflow</a></li>
+        <li><a href="https://www.geeksforgeeks.org/">GeeksForGeeks</a></li>
+    </ul>
+    </div>
+    <h2 id="preparationtips">Preparation Tips</h2>
+    <h4>1. Understand the GATE syllabus and pattern</h4>
+    <p>This is necessary as the syllabus may differ a little each year and there might be minute changes in the pattern as well. 
+        Moreover, a thorough study plan cannot be created until the exam syllabus and pattern are known.</p>
+    <h4>2. Find the books required according to the syllabus</h4>
+    <p>Generally, two or three books are enough for a particular subject where one book can be used in the start and other books can be 
+        referred if any doubts arise</p>
+    <h4>3. Create a study plan for GATE preparation</h4>
+    <p>It is necessary to have a study plan for GATE preparation as it inculcates discipline and time management skills.</p>
+    <h4>4. Focus on Aptitude and Mathematics as well</h4>
+    <p>It is very important to focus on Aptitude and Mathematics as they are quite scoring subjects and constitute around 30 marks in 
+        the GATE exam.</p>
+    <h4>5.	Prepare notes on the relevant topics</h4>
+    <p>Preparing notes with the important information and formulae is vital as these notes can be referred later during revision. </p>
+    <h4>6.	Strengthen your conceptual knowledge </h4>
+    <p>It is important to have conceptual clarity as GATE is an exam that tests the candidates’ concepts and has very little questions 
+        that have direct application of formulae.</p>
+    <h4>7.	Familiarize yourself with the virtual calculator </h4>
+    <p>This can result in an increase in calculation speed which is very advantageous in a competitive exam like GATE.</p>
+    <h4>8.	Evaluate your understanding of a topic after studying it </h4>
+    <p>This will reveal the weak points in your preparation that can then be eliminated. Moreover, self-evaluation also helps in 
+        retaining the knowledge that you have learnt.</p>
+    <h4>9.	Revise the topics at suitable intervals </h4>
+    <p>After understanding a topic thoroughly, it is important to revise it at suitable intervals otherwise there is a chance of 
+        forgetting it. </p>
+    <h4>10.	Analyze previous GATE papers and attempt multiple mock tests </h4>
+    <p>Analyzing and attempting previous GATE papers and GATE mock tests is an excellent way of understanding the GATE structure in a 
+        controlled environment. This also helps in improving time management skills and reduces silly mistakes in the actual GATE exam.</p>
+        <div>
+            <p id="last"><a href="#top">Back to Top</a></p>
+        </div>
+    </body>
+</html>

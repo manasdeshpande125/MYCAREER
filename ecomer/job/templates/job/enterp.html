@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrepreneurship</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style>
+    {% load static%}
+
+        .h-primary {
+            font-size: 3rem;
+            font-family: 'Ubuntu', sans-serif;
+            text-shadow: 2px 2px gray;
+        }
+
+        .h-secondary {
+            font-size: 2rem;
+        }
+
+        .text-align {
+            text-align: center;
+        }
+
+        /* part 1 */
+        #i1 p {
+            margin: 5px 30px;
+            font-size: 1.5rem;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bold;
+        }
+
+        .box1 p {
+            margin: 5px 30px;
+            font-size: 1.2rem;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bold;
+        }
+
+        .box1 li {
+            margin: 5px 40px;
+            font-size: 1.1rem;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bold;
+
+        }
+
+        #i2 {
+            display: flex;
+            margin: 10px;
+            padding: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #i2 img {
+            height: 500px;
+            width: 40%;
+        }
+
+        .box1 {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+
+        .box1 p {
+            font-size: 1.3rem;
+        }
+
+
+        /* body styling  - part 2*/
+        .body {
+            margin-top: 200px;
+        }
+
+        #characteristics {
+            width: 80%;
+            margin: 20px 100px;
+        }
+
+        #characteristics::before {
+            content: "";
+            background-image: url("{% static "job/backimg2.jpg" %}");
+            position: absolute;
+            width: 90%;
+            height: 95%;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        #characteristics li {
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 5px;
+            padding: 3px;
+        }
+
+        /* part 3 */
+        .main_box {
+            display: flex;
+            width: 100vw;
+
+
+        }
+
+        .container {
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .container p {
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .container img {
+            display: block;
+            margin: auto;
+            height: 100px;
+            width: 200px;
+        }
+
+        #container-1 {
+            width: 30%;
+        }
+
+        #container-2 {
+            width: 30%;
+        }
+
+        #container-3 {
+            width: 30%;
+        }
+
+        /* Responsiveness of website ,part-1 */
+
+        @media only screen and (min-width:670px) and (max-width:1050px) {
+            .h-primary {
+                font-size: 2rem;
+                font-family: 'Ubuntu', sans-serif;
+                text-shadow: 1.5px 1.5px gray;
+            }
+
+            .h-secondary {
+                font-size: 1.4rem;
+            }
+
+            /* part-1 */
+            #i1 p {
+                margin: 5px 10px;
+                font-size: 1.1rem;
+                font-family: 'Ubuntu', sans-serif;
+                font-weight: bold;
+            }
+
+            #i2 {
+                display: flex;
+                margin: 3px;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .box1 p {
+                margin: 5px;
+                font-size: 1rem;
+                font-family: 'Ubuntu', sans-serif;
+                font-weight: bold;
+            }
+
+            .box1 li {
+                margin: 6px;
+                font-size: 0.9rem;
+                font-family: 'Ubuntu', sans-serif;
+                font-weight: bold;
+
+            }
+
+            /* part-2 */
+            #characteristics li {
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 1rem;
+                font-weight: bold;
+                margin: 2px;
+
+            }
+
+            /* part-3 */
+            .main_box {
+                display: flex;
+                flex-direction: column;
+                /* width: 100vw; */
+            }
+
+            #container-1 {
+                width: 100%;
+            }
+
+            #container-2 {
+                width: 100%;
+            }
+
+            #container-3 {
+                width: 100%;
+            }
+
+        }
+
+        /* Responsiveness of website ,part-1 */
+
+        @media only screen and (max-width:670px) {
+            .h-primary {
+                font-size: 2rem;
+                font-family: 'Ubuntu', sans-serif;
+                text-shadow: 1.5px 1.5px gray;
+            }
+
+            .h-secondary {
+                font-size: 1.4rem;
+            }
+
+            #i2 {
+                display: flex;
+                flex-direction: column;
+                margin: 5px;
+                
+                /* align-items: center; */
+                /* justify-content: center; */
+            }
+
+            #i2 img {
+                height: 500px;
+                width: 100%;
+            }
+            
+            .box1 p {
+            
+                font-size: 1rem;
+                font-family: 'Ubuntu', sans-serif;
+                font-weight: bold;
+            }
+
+            .box1 li {
+                margin: 0px;
+                padding: 0px;
+                
+                font-size: 0.9rem;
+                font-family: 'Ubuntu', sans-serif;
+                font-weight: bold;
+
+            }
+            /* part-2 */
+            #characteristics li {
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 0.8rem;
+                font-weight: bold;
+                
+
+            }
+            /* part-3 */
+            .main_box {
+                display: flex;
+                flex-direction: column;
+                /* width: 100vw; */
+            }
+
+            #container-1 {
+                width: 100%;
+            }
+
+            #container-2 {
+                width: 100%;
+            }
+
+            #container-3 {
+                width: 100%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+
+        <div class="intro">
+            <div id="i1">
+                <h1 class="h-primary text-align">What is Entrepreneurship?</h1>
+                <p class="text-align">Entrepreneurship is the creation or extraction of value. With this definition,
+                    entrepreneurship is
+                    viewed as change, generally entailing risk beyond what is normally encountered in starting a
+                    business,which
+                    may include other values than simply economic ones.</p>
+            </div>
+            <div id="i2">
+                <div class="box1">
+                    <h3 class="h-primary">Entrepreneur</h3>
+
+                    <p>The entrepreneur is defined as someone who has the ability and desire to establish, administer
+                        and succeed in a start-up venture along with risk entitled to it, to make profits. The best
+                        example of entrepreneurship is the starting of a new business venture. The entrepreneurs are
+                        often known as a source of new ideas or innovators and bring new ideas in the market by
+                        replacing old with an invention.
+                    </p>
+                    <ul>
+                        <li>A person who undertakes the risk of starting a new business venture is called an
+                            entrepreneur.</li>
+                        <li>An entrepreneur creates a firm to realize their idea, known as entrepreneurship, which
+                            aggregates capital and labour to produce goods or services for profit.</li>
+                        <li> Entrepreneurship is highly risky but also can be highly rewarding, as it serves to generate
+                            economic wealth, growth, and innovation.</li>
+                    </ul>
+                </div>
+                <img src="{% static "job/ee1.jpg" %}" alt="Entrepreneurship">
+
+            </div>
+            <div id="characteristics">
+                <h4 class="h-primary text-align">Qualities of entrepreneur</h4>
+                <ul type="square">
+                    <li><span class="h-secondary">Ability to take a risk-</span> Starting any new venture involves a
+                        considerable amount of failure risk. Therefore, an entrepreneur needs to be courageous and able
+                        to evaluate and take risks, which is an essential part of being an entrepreneur.</li>
+                    <li><span class="h-secondary">Innovation-</span> It should be highly innovative to generate new
+                        ideas, start a company and earn profits out of it. Change can be the launching of a new product
+                        that is new to the market or a process that does the same thing but in a more efficient and
+                        economical way.
+                    </li>
+                    <li><span class="h-secondary">Flexible-</span> An entrepreneur should be flexible and open to change
+                        according to the situation. To be on the top, a businessperson should be equipped to embrace
+                        change in a product and service, as and when needed.</li>
+                    <li><span class="h-secondary">Visionary and Leadership quality-</span> To be successful, the
+                        entrepreneur should have a clear vision of his new venture. However, to turn the idea into
+                        reality, a lot of resources and employees are required. Here, leadership quality is paramount
+                        because leaders impart and guide their employees towards the right path of success.</li>
+                    <li><span class="h-secondary">Know your Product-</span>A company owner should know the product
+                        offerings and also be aware of the latest trend in the market. It is essential to know if the
+                        available product or service meets the demands of the current market, or whether it is time to
+                        tweak it a little. Being able to be accountable and then alter as needed is a vital part of
+                        entrepreneurship</li>
+                </ul>
+            </div>
+        </div>
+        <div class="body">
+            <h2 class="h-primary text-align">Government Support-</h2>
+            <div class="main_box">
+
+                <div class="container" id="container-1">
+                    <h3 class="h-secondary text-align">Startup India Initiative</h3>
+                    <img src="{% static "job/e1.png" %}" alt="Error to load the image">
+                    <p class="para1">
+                        The Prime Minister of India launched the Startup India Initiative in the year 2016. The idea is
+                        to increase wealth and employability by giving wings to entrepreneurial spirits. The government
+                        gives tax benefits to startups under this scheme and 798 applicants have made use of this scheme
+                        to date. The Department of Industrial Policy and Promotion is maintaining this initiative and is
+                        treating it as a long term project. Moreover, the overall age limit for startups has been
+                        increased from two years to seven years.
+                    </p>
+                </div>
+                <div class="container" id="container-2">
+                    <h3 class="h-secondary text-align">ASPIRE</h3>
+                    <img src="{% static "job/e2.png" %}" alt="Error to load the image">
+                    <p class="para1">
+                        The government has made continuous efforts to improve the social and economic aspects of life in
+                        rural areas of India. Since 56% of the Indian population lives in the rural areas, the
+                        government is promoting entrepreneurship and innovation in the rural sector. The ASPIRE scheme
+                        aims at increasing employment, reducing poverty, and encouraging innovation in rural India.
+                        However, the main idea is to promote the agro-business industry. The Ministry of Medium and
+                        Small Enterprises has tried to boost economic development at the grassroots level. The total
+                        budget of the scheme was INR 62.5 crores for the period of 2014-2016.
+                    </p>
+                </div>
+                <div class="container" id="container-3">
+                    <h3 class="h-secondary text-align">Ministry of Skill Development and Entrepreneurship</h3>
+                    <img src="{% static "job/e3.jpg" %}" alt="Error to load the image">
+                    <p class="para1">
+                        The task of promoting entrepreneurship was earlier given to different departments and government
+                        agencies. In 2014, the Prime Minister decided to dedicate an entire ministry to build this
+                        sector as he felt that skill development required greater push from the government's side.
+                        Furthermore, the idea is to reach 500 million people by the year 2022 through gap-funding and
+                        skill development initiatives.
+                    </p>
+                </div>
+            </div>
+            <span>
+                <h2>For More Information-<a href="https://startuptalky.com/list-of-government-initiatives-for-startups/"
+                        target="_blank">Click Here</a></h2>
+            </span>
+        </div>
+    </div>
+</body>
+
+</html>
