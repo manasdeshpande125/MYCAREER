@@ -1,0 +1,15 @@
+create repository in github
+open git bash from desired folder 
+git config --user.name
+git config --user.email
+touch .gitignore
+git init
+git add -A
+git commit -m "Initial Commit"
+git status
+git remote add origin (take it from github "ssh")
+git push origin master
+---Code is on github----- 
+for cloning 
+git clone https(from github) name of folder
+
